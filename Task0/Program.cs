@@ -29,13 +29,50 @@
 // Напишите программу вычисляющую значение функции числа в квадрате
 
 // int Power(int number)
-// {
-//     int result = number*number;
-//     return result;
-// }
-// // функция
+//     {
+//          int result = number*number;
+//          return result;
+//     }
+// // // функция
 
 // Console.WriteLine("Введите число");
 // int num = Convert.ToInt32(Console.ReadLine());
 
+// int result = Power(num);
+
 // Console.WriteLine(Power(num));
+
+
+// Напишите программу вычисляющую значение функции числа в квадрате
+// в сокращенном варианте
+
+// int Power(int number)
+//     {
+//         return number*number;
+//     }
+// // // функция
+
+// Console.WriteLine("Введите число");
+// int num = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine(Power(num));
+
+
+// На входе число на выходе целые числа от N lj -N
+
+// void Task7()
+
+// {Console.WriteLine("Введите число");
+// int num = Convert.ToInt32(Console.ReadLine());
+// num = Math.Abs(num);
+
+// int counter = - num;
+
+// // выводим числа до тех пор пока не достигнем нужного числа
+//     while (counter <= num)
+//     {
+//         Console.Write(counter+ ", ");
+//         counter++;
+//     }
+// }
+
+//  Task7();
