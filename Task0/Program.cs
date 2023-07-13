@@ -28,14 +28,14 @@
 
 // Напишите программу вычисляющую значение функции числа в квадрате
 
-int Power(int number)
-{
-    int result = number*number;
-    return result;
-}
-// функция
+// int Power(int number)
+// {
+//     int result = number*number;
+//     return result;
+// }
+// // функция
 
-Console.WriteLine("Введите число");
-int num = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число");
+// int num = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(Power(num));
+// Console.WriteLine(Power(num));
