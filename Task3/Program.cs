@@ -23,22 +23,41 @@
 
 // Task9();
 
-void Task10()
+// void Task10()
+// {
+//     // напишите программу которая принимает на вход число и проверяет кратно ли 
+//     // оно 7 и 23 одновременно
+   
+//     Console.WriteLine ("Введите первое число  ");
+//     int number = Convert.ToInt32(Console.ReadLine());
+//     if (number % 7 == 0)
+//     {
+//         if (number % 23 == 0)
+//         {
+//            Console.WriteLine ("Да, данное число кратно 7 и 23 одновременно"); 
+//         }
+//     }
+//         else Console.WriteLine ("Нет,данное число не кратно 7 и 23 одновременно");
+// }
+
+
+// Task10 ();
+
+void Task11()
 {
     // напишите программу которая принимает на вход число и проверяет кратно ли 
     // оно 7 и 23 одновременно
    
     Console.WriteLine ("Введите первое число  ");
-    int number = Convert.ToInt32(Console.ReadLine());
-    if (number % 7 == 0)
+    int number_a = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine ("Введите второе число  ");
+    int number_b = Convert.ToInt32(Console.ReadLine());
+    if (number_a % number_b == 0)
     {
-        if (number % 23 == 0)
-        {
-           Console.WriteLine ("Да, данное число кратно 7 и 23 одновременно"); 
-        }
+        Console.WriteLine ($"Число {number_a} кратно числу {number_b}");
     }
-        else Console.WriteLine ("Нет,данное число не кратно 7 и 23 одновременно");
+    else Console.WriteLine ($"Число {number_a} не кратно числу {number_b}");
 }
 
 
-Task10 ();
+Task11 ();
