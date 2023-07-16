@@ -1,8 +1,8 @@
 ﻿// void Task9()
 // {
-    // напишите программу которая выводи случайное число из
-    // отрезка 10 1000 и и сделайте из него двухзначное убрав посередине цифру
-   
+// напишите программу которая выводи случайное число из
+// отрезка 10 1000 и и сделайте из него двухзначное убрав посередине цифру
+
 //     int number = new Random().Next(10, 1000); 
 
 //     Console.WriteLine($"выпало случайное число {number}");
@@ -27,7 +27,7 @@
 // {
 //     // напишите программу которая принимает на вход число и проверяет кратно ли 
 //     // оно 7 и 23 одновременно
-   
+
 //     Console.WriteLine ("Введите первое число  ");
 //     int number = Convert.ToInt32(Console.ReadLine());
 //     if (number % 7 == 0)
@@ -43,21 +43,44 @@
 
 // Task10 ();
 
-void Task11()
+// void Task11()
+// {
+//     // напишите программу которая принимает на вход число и проверяет кратно ли 
+//     // первое число второму
+
+//     Console.WriteLine ("Введите первое число  ");
+//     int number_a = Convert.ToInt32(Console.ReadLine());
+//     Console.WriteLine ("Введите второе число  ");
+//     int number_b = Convert.ToInt32(Console.ReadLine());
+//     if (number_a % number_b == 0)
+//     {
+//         Console.WriteLine ($"Число {number_a} кратно числу {number_b}");
+//     }
+//     else Console.WriteLine ($"Число {number_a} не кратно числу {number_b}");
+// }
+
+// Task11();
+
+void Task12()
 {
-    // напишите программу которая принимает на вход число и проверяет кратно ли 
-    // оно 7 и 23 одновременно
-   
-    Console.WriteLine ("Введите первое число  ");
-    int number_a = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine ("Введите второе число  ");
-    int number_b = Convert.ToInt32(Console.ReadLine());
-    if (number_a % number_b == 0)
+// напишите программу которая принимает на вход число и проверяет кратно ли
+// первое число второму новый  способ
+
+int input(string text)
     {
-        Console.WriteLine ($"Число {number_a} кратно числу {number_b}");
+        Console.WriteLine(text);
+        return Convert.ToInt32(Console.ReadLine());
     }
-    else Console.WriteLine ($"Число {number_a} не кратно числу {number_b}");
+
+    int num_a = input("Введите первое число ");
+    int num_b = input("Введите второе число ");
+
+if (num_a % num_b == 0)
+    {
+        Console.WriteLine($"Число {num_a} кратно числу {num_b}");
+    }
+    else Console.WriteLine($"Число {num_a} не кратно числу {num_b}");
+
 }
 
-
-Task11 ();
+Task12();
