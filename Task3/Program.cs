@@ -28,7 +28,7 @@
 //     // напишите программу которая принимает на вход число и проверяет кратно ли 
 //     // оно 7 и 23 одновременно
 
-//     Console.WriteLine ("Введите первое число  ");
+//     Console.WriteLine ("Введите число  ");
 //     int number = Convert.ToInt32(Console.ReadLine());
 //     if (number % 7 == 0)
 //     {
@@ -61,26 +61,60 @@
 
 // Task11();
 
-void Task12()
-{
-// напишите программу которая принимает на вход число и проверяет кратно ли
-// первое число второму новый  способ
+// void Task12()
+// {
+// // напишите программу которая принимает на вход число и проверяет кратно ли
+// // первое число второму новый  способ
 
-int input(string text)
+// int input(string text)
+// //переменную создаем так как дважды одно и то же действие
+//     {
+//         Console.WriteLine(text);
+//         return Convert.ToInt32(Console.ReadLine());
+//     }
+
+//     int num_a = input("Введите первое число ");
+//     int num_b = input("Введите второе число ");
+//     int div = num_a % num_b;
+
+// if (div == 0)
+//     {
+//         Console.WriteLine($"Число {num_a} кратно числу {num_b}");
+//     }
+//     else 
+//     {
+//         Console.WriteLine($"Число {num_a} НЕ кратно числу {num_b}."
+//                      + $" Остаток от деления равен {div}");
+//     }
+    
+
+// }
+
+// Task12();
+
+
+ void Task14()
+ // другой способ решения
+ {
+    int input(string text)
+     {
+         Console.WriteLine(text);
+         return Convert.ToInt32(Console.ReadLine());
+     }
+
+    int number = input("Введите число   ");
+
+        if (number % 7 == 0 & number % 23 == 0)
     {
-        Console.WriteLine(text);
-        return Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine ($"Да, данное число {number} кратно 7 и 23 одновременно");
     }
-
-    int num_a = input("Введите первое число ");
-    int num_b = input("Введите второе число ");
-
-if (num_a % num_b == 0)
+    // & и
+    // I или
+        else 
     {
-        Console.WriteLine($"Число {num_a} кратно числу {num_b}");
+        Console.WriteLine ($"Нет,данное число {number} НЕ кратно 7 и 23 одновременно");
     }
-    else Console.WriteLine($"Число {num_a} не кратно числу {num_b}");
+ }
 
-}
 
-Task12();
+Task14();
