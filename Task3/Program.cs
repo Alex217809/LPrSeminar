@@ -85,12 +85,11 @@
 //     {
 //         Console.WriteLine($"Число {num_a} НЕ кратно числу {num_b}."
 //                      + $" Остаток от деления равен {div}");
-//     }
+//        }
     
 
-// }
+//}
 
-// Task12();
 
 
  void Task14()
@@ -116,5 +115,31 @@
     }
  }
 
+ void Task15()
+ // Является ли одно число квадратом другого
+ {
+    int input(string text)
+     {
+         Console.WriteLine(text);
+         return Convert.ToInt32(Console.ReadLine());
+     }
 
-Task14();
+    int num_f = input("Введите первое число   ");
+    int num_s = input("Введите второе число   ");
+     if (num_f * num_f == num_s || num_s * num_s == num_f)
+     {
+        Console.WriteLine ("Является кврадартом");
+     }
+    
+    // & и
+    // | или
+    // && краткое и
+    // || красткое или
+     else
+    {
+        Console.WriteLine ("Не является кврадартом");
+    }
+ }
+
+Console.Clear();
+Task15();
