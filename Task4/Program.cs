@@ -35,5 +35,44 @@ void Task17()
      }
 }
 
-Task17();
+
+
+int input(string text)
+    {
+        Console.WriteLine(text);
+        return Convert.ToInt32(Console.ReadLine());
+    }
+
+void Task18()
+{
+    //Программа задает координаты x и y 
+    //определить четверть
+    
+    int quater = input("номер четверти ");
+    
+     if (quater == 1)
+     {
+        Console.WriteLine("x > 0 && y > 0");
+     }
+     else if (quater == 2)
+     
+     {
+        Console.WriteLine("x < 0 && y > 0");
+     }
+     else if (quater == 3)
+     {
+        Console.WriteLine("x < 0 && y < 0");
+     }
+     else if (quater == 4)
+     {
+        Console.WriteLine("x > 0 && y < 0");
+     }
+     else 
+     {
+        Console.WriteLine("Номер четверти введен неверно");
+     }
+}
+
+Console.Clear();
+Task18();
 
