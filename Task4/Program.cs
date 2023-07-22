@@ -1,5 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+int input(string text)
+    {
+        Console.WriteLine(text);
+        return Convert.ToInt32(Console.ReadLine());
+    }
 void Task17()
 {
     //Программа задает координаты x и y 
@@ -37,11 +42,6 @@ void Task17()
 
 
 
-int input(string text)
-    {
-        Console.WriteLine(text);
-        return Convert.ToInt32(Console.ReadLine());
-    }
 
 void Task18()
 {
@@ -141,6 +141,73 @@ void Task21_1()
      
 }
 
+
+void Task22()
+{
+   //напищшите программу которая принимает на входе число N
+   // и выдает таблицу квадратов чисел от 1 до Т
+   int input(string text)
+    {
+        Console.WriteLine(text);
+        return Convert.ToInt32(Console.ReadLine());
+    }
+   
+   int N = input("Введите число ");
+
+   Console.WriteLine ($"таблица квадратов от 1 до {N} ");
+      
+      for (int i = 1; i <=N; i++)
+    {
+        {            
+            Console.WriteLine ($"{i}^2 = {Math.Pow(i, 2)}");
+        }
+    }
+    Console.WriteLine();
+       
+}
+
 Console.Clear();
-Task21_1();
+
+// int task = input ("Введите номер задачи ");
+
+// if (task == 17) Task17();
+// else if (task == 18) Task18();
+// else if (task == 21) Task21();
+// else if (task == 21_1) Task21_1();
+// else if (task == 22) Task22();
+
+// вместо if и else можно swith
+
+int task = input ("Введите номер задачи ");
+switch (task)
+{
+   case 17:
+      Task17();
+      break;
+
+   case 18:
+      Task18();
+      break;
+   
+   case 21:
+      Task21();
+      break;
+
+case 21_1:
+      Task21_1();
+      break;
+
+case 22:
+      Task22();
+      break;
+  
+     
+   
+        Console.WriteLine("Введен неправильный номер задачи");
+      break;
+}
+
+
+
+
 
